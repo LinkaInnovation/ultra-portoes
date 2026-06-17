@@ -272,7 +272,7 @@
                   <div>
                     <b>Horário</b>
                     <span>Seg a Sex · 8h às 18h · Urgências sob consulta</span>
-                    <p style={{ margin: "1px 0 0" }}>
+                    <p style={{ margin: "0px 0 0" }}>
                       <span>Sáb · 8h às 13h </span>
                     </p>
                   </div>
