@@ -340,6 +340,7 @@
     ADDRESS,
     ADDRESS_SHORT,
     INSTAGRAM,
+    FACEBOOK,
     waLink,
     SERVICES,
     DIFERENCIAIS,
