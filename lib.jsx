@@ -210,7 +210,7 @@
     {
       ic: "automate",
       t: "Automação de Portões",
-      d: "Motorização inteligente com controle remoto e integração ao seu sistema de segurança.",
+      d: "Motorização inteligente com controle remoto, travas de segurança anti furto e integração ao seu sistema de segurança.",
     },
     {
       ic: "wrench",
