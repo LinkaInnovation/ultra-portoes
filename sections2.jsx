@@ -542,7 +542,7 @@
                 <Icon.instagram />
               </a>
               <a
-                href={INSTAGRAM}
+                href={FACEBOOK}
                 target="_blank"
                 rel="noopener"
                 aria-label="Facebook"

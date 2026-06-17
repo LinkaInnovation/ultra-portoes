@@ -194,6 +194,7 @@
     "Av. Nossa Sra. da Assunção, 960 — Vila Butantã, São Paulo · SP";
   const ADDRESS_SHORT = "Vila Butantã · São Paulo / SP";
   const INSTAGRAM = "https://instagram.com/ultraportoes";
+  const FACEBOOK = "https://www.facebook.com/profile.php?id=61574797958293";
 
   const WA_BASE = "https://wa.me/5511940403153";
 
