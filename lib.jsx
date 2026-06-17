@@ -156,6 +156,13 @@
         <path d="m9 14 2 2 3.5-3.5" />
       </svg>
     ),
+    creditCard: (p) => (
+      <svg {...S(p)}>
+        <rect x="2" y="5" width="20" height="14" rx="2" />
+        <path d="M2 9h20" />
+        <path d="M6 15h4" />
+      </svg>
+    ),
     // ---- misc ----
     google: (p) => (
       <svg viewBox="0 0 24 24" width={p?.width || 24} height={p?.height || 24}>
@@ -182,7 +189,7 @@
   // ---- contact constants ----
   const WA_NUMBER = "5511940403153";
   const PHONE_DISPLAY = "(11) 94040-3153";
-  const EMAIL = "contato@ultraportoes.com.br";
+  const EMAIL = "ultraportoes@gmail.com ";
   const ADDRESS =
     "Av. Nossa Sra. da Assunção, 960 — Vila Butantã, São Paulo · SP";
   const ADDRESS_SHORT = "Vila Butantã · São Paulo / SP";
@@ -203,17 +210,17 @@
     {
       ic: "automate",
       t: "Automação de Portões",
-      d: "Motorização inteligente com controle remoto, interfone e integração ao seu sistema de segurança.",
-    },
-    {
-      ic: "shieldCheck",
-      t: "Manutenção Preventiva",
-      d: "Revisões programadas que prolongam a vida útil do equipamento e evitam paradas inesperadas.",
+      d: "Motorização inteligente com controle remoto e integração ao seu sistema de segurança.",
     },
     {
       ic: "wrench",
       t: "Manutenção Corretiva",
       d: "Diagnóstico rápido e reparo de motores, trilhos e automatizadores com peças originais.",
+    },
+    {
+      ic: "wrench",
+      t: "Trabalho de Pintura e Eletrostática",
+      d: "Pintura e revestimento eletrostático com precisão, qualidade e proteção duradoura para seu portão.",
     },
     {
       ic: "cpu",
@@ -254,8 +261,8 @@
       d: "Toda instalação e reparo acompanha garantia formal por escrito.",
     },
     {
-      ic: "fileCheck",
-      t: "Orçamento sem compromisso",
+      ic: "creditCard",
+      t: "Parcelamento em até 10x",
       d: "Avaliação técnica e proposta transparente, sem taxas escondidas.",
     },
   ];

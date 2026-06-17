@@ -302,15 +302,34 @@
   function Services() {
     return (
       <section className="services sec-pad" id="servicos">
-        <div className="wrap">
-          <div className="sec-head reveal">
-            <span className="kicker">O que fazemos</span>
-            <h2 className="head">Soluções completas em portões automáticos</h2>
-            <p>
-              Do projeto à manutenção, cuidamos de cada etapa com técnica, peças
-              originais e acabamento profissional.
-            </p>
+        <div
+          className="wrap flex-col"
+          style={{ position: "relative", zIndex: 2 }}
+        >
+          <div className="svc-head-row">
+            <div className="svc-body">
+              <div className="svc-head-text">
+                <div className="sec-head reveal">
+                  <span className="kicker">O que fazemos</span>
+                  <h2 className="head">
+                    Soluções completas em portões automáticos
+                  </h2>
+                  <p>
+                    Do projeto à manutenção, cuidamos de cada etapa com técnica,
+                    peças originais e acabamento profissional.
+                  </p>
+                </div>
+              </div>
+              <div className="svc-head-image reveal" aria-hidden="true">
+                <img
+                  src="services-foto.jpeg"
+                  alt="Serviços de portões automáticos"
+                  className="svc-foto"
+                />
+              </div>
+            </div>
           </div>
+
           <div className="svc-grid reveal">
             {SERVICES.map((s, i) => {
               const Ic = Icon[s.ic];

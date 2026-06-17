@@ -38,7 +38,7 @@
         <div className="wrap sobre-grid">
           <div className="sobre-art reveal">
             <img
-              src="sobre-foto.jpg"
+              src="sobre-foto.jpeg"
               alt="Portão automático moderno instalado pela Ultra Portões"
               style={{
                 width: "100%",
@@ -273,7 +273,7 @@
                     <b>Horário</b>
                     <span>Seg a Sex · 8h às 18h · Urgências sob consulta</span>
                     <p style={{ margin: "0px 0 0" }}>
-                      <span>Sáb · 8h às 13h </span>
+                      <span>Sáb · 8h às 12h </span>
                     </p>
                   </div>
                 </div>
