@@ -219,7 +219,7 @@
     },
     {
       ic: "wrench",
-      t: "Trabalho de Pintura e Eletrostática",
+      t: "Trabalho de Pintura Eletrostática",
       d: "Pintura e revestimento eletrostático com precisão, qualidade e proteção duradoura para seu portão.",
     },
     {
@@ -267,27 +267,22 @@
     },
   ];
 
-  const PROJ_CATS = [
-    "Todos",
-    "Basculantes",
-    "Deslizantes",
-    "Comerciais",
-    "Instalações",
-  ];
+  const PROJ_CATS = ["Todos", "Basculantes", "Deslizantes"];
   const PROJECTS = [
-    { cat: "Deslizantes", t: "Portão deslizante branco", img: "proj-01.jpeg" },
-    { cat: "Deslizantes", t: "Deslizante residencial", img: "proj-02.jpeg" },
+    { cat: "Deslizantes", t: "Portão deslizante branco", img: "4.jpeg" },
+    { cat: "Basculantes", t: "Deslizante residencial", img: "proj-02.jpeg" },
     { cat: "Basculantes", t: "Basculante decorativo", img: "proj-03.jpeg" },
-    { cat: "Deslizantes", t: "Deslizante cinza moderno", img: "proj-04.jpeg" },
-    { cat: "Instalações", t: "Equipe em campo", img: "proj-05.jpeg" },
-    { cat: "Comerciais", t: "Portão comercial gradeado", img: "proj-06.jpeg" },
+    { cat: "Basculantes", t: "Deslizante cinza moderno", img: "proj-04.jpeg" },
+    { cat: "Basculantes", t: "Portão basculante", img: "2.jpeg" },
+    { cat: "Basculantes", t: "Portão basculante", img: "3.jpeg" },
+    { cat: "Basculantes", t: "Portão basculante", img: "1.jpeg" },
     {
       cat: "Basculantes",
       t: "Basculante estilo diamante",
       img: "proj-07.jpeg",
     },
     { cat: "Basculantes", t: "Basculante premium", img: "proj-08.jpeg" },
-    { cat: "Deslizantes", t: "Deslizante contemporâneo", img: "proj-09.jpeg" },
+    { cat: "Basculantes", t: "Basculante contemporâneo", img: "proj-09.jpeg" },
   ];
 
   const DEPOIMENTOS = [
