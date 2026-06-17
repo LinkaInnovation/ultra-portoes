@@ -269,13 +269,13 @@
 
   const PROJ_CATS = ["Todos", "Basculantes", "Deslizantes"];
   const PROJECTS = [
-    { cat: "Deslizantes", t: "Portão deslizante branco", img: "4.jpeg" },
+    { cat: "Deslizantes", t: "Portão deslizante branco", img: "1.jpeg" },
     { cat: "Basculantes", t: "Deslizante residencial", img: "proj-02.jpeg" },
     { cat: "Basculantes", t: "Basculante decorativo", img: "proj-03.jpeg" },
     { cat: "Basculantes", t: "Deslizante cinza moderno", img: "proj-04.jpeg" },
     { cat: "Basculantes", t: "Portão basculante", img: "2.jpeg" },
-    { cat: "Basculantes", t: "Portão basculante", img: "3.jpeg" },
-    { cat: "Basculantes", t: "Portão basculante", img: "1.jpeg" },
+
+    { cat: "Basculantes", t: "Portão basculante", img: "4.jpeg" },
     {
       cat: "Basculantes",
       t: "Basculante estilo diamante",
