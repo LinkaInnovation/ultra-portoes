@@ -270,6 +270,11 @@
 
   const PROJ_CATS = ["Todos", "Basculantes", "Deslizantes"];
   const PROJECTS = [
+    {
+      cat: "Deslizantes",
+      t: "Portão deslizante branco",
+      img: "services-foto.jpeg",
+    },
     { cat: "Deslizantes", t: "Portão deslizante branco", img: "1.jpeg" },
     { cat: "Basculantes", t: "Deslizante residencial", img: "proj-02.jpeg" },
     { cat: "Basculantes", t: "Basculante decorativo", img: "proj-03.jpeg" },

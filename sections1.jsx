@@ -320,13 +320,7 @@
                   </p>
                 </div>
               </div>
-              <div className="svc-head-image reveal" aria-hidden="true">
-                <img
-                  src="services-foto.jpeg"
-                  alt="Serviços de portões automáticos"
-                  className="svc-foto"
-                />
-              </div>
+              <div className="svc-head-image reveal" aria-hidden="true"></div>
             </div>
           </div>
 
