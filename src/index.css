@@ -307,6 +307,12 @@ section {
   gap: 12px;
   cursor: pointer;
 }
+.logo img {
+  height: 42px;
+  width: auto;
+  display: block;
+  border-radius: 7px;
+}
 .logo .mark {
   width: 42px;
   height: 42px;
@@ -654,6 +660,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: calc(100vh - 78px);
+  min-height: calc(100dvh - 78px);
 }
 [data-hero="split"] .hero-left {
   background: var(--ink);
@@ -1731,6 +1738,18 @@ section {
 /* ============================================================
    RESPONSIVE
    ============================================================ */
+
+/* ---- nav: drop phone label before the layout gets tight ---- */
+@media (max-width: 1080px) {
+  .nav-phone {
+    display: none;
+  }
+  .nav-links {
+    gap: 22px;
+  }
+}
+
+/* ---- tablet landscape ---- */
 @media (max-width: 1024px) {
   .svc-body {
     grid-template-columns: 1fr;
@@ -1756,26 +1775,43 @@ section {
   [data-hero="split"] .hero-right {
     min-height: 380px;
   }
+  /* image spans full width when stacked — pull the floating tag inside it */
+  .sobre-art {
+    aspect-ratio: 16/10;
+  }
   .sobre-art .tag-float {
     right: 14px;
+    bottom: 14px;
   }
   .foot-grid {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
 }
+
+/* ---- tablet portrait ---- */
 @media (max-width: 860px) {
   [data-hero="escuro"] .hero-grid,
   [data-hero="claro"] .hero-grid {
     grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  /* keep floating hero badges inside the now full-width art */
+  [data-hero="escuro"] .hero-art,
+  [data-hero="claro"] .hero-art {
+    aspect-ratio: 16/11;
+    min-height: 320px;
   }
   [data-hero="escuro"] .hero-badge {
-    left: auto;
-    right: 20px;
+    left: 16px;
+    right: auto;
+    bottom: 16px;
   }
-}
-
-@media (max-width: 860px) {
+  [data-hero="claro"] .hero-badge {
+    right: 16px;
+    left: auto;
+    top: 16px;
+  }
   .svc-body {
     grid-template-columns: 1fr;
     gap: 18px;
@@ -1790,14 +1826,8 @@ section {
     max-height: 280px;
   }
 }
-@media (max-width: 1080px) {
-  .nav-phone {
-    display: none;
-  }
-  .nav-links {
-    gap: 22px;
-  }
-}
+
+/* ---- large phone ---- */
 @media (max-width: 680px) {
   body {
     font-size: 16px;
@@ -1838,11 +1868,86 @@ section {
   .svc {
     padding: 30px 26px;
   }
+  .cob-map,
+  .cob-map iframe {
+    min-height: 320px;
+  }
   .fab-bubble {
     display: none;
   }
   .foot-bot {
     flex-direction: column;
     align-items: flex-start;
+    gap: 6px;
+  }
+}
+
+/* ---- small phone ---- */
+@media (max-width: 520px) {
+  :root {
+    --pad: 18px;
+  }
+  .sec-pad {
+    padding-block: clamp(56px, 14vw, 96px);
+  }
+  .nav-inner {
+    height: 64px;
+    gap: 14px;
+  }
+  .hero {
+    padding-top: 64px;
+  }
+  .m-menu {
+    inset: 64px 0 auto 0;
+  }
+  /* the inline CTA lives in the burger menu on small screens */
+  .nav-btn {
+    display: none;
+  }
+  .logo img {
+    height: 36px;
+  }
+  .btn,
+  .btn.lg {
+    height: 52px;
+    padding: 0 22px;
+    font-size: 15px;
+  }
+  .sec-head h2 {
+    font-size: clamp(30px, 9vw, 44px);
+  }
+  .sec-head p {
+    font-size: 16px;
+  }
+  .orc-left p,
+  .sobre-txt p {
+    font-size: 16px;
+  }
+  .proj-filters {
+    flex-wrap: wrap;
+  }
+  .sobre-art .tag-float {
+    padding: 16px 18px;
+    max-width: 200px;
+  }
+  .sobre-art .tag-float b {
+    font-size: 32px;
+  }
+  [data-hero="escuro"] .hero-badge,
+  [data-hero="claro"] .hero-badge {
+    padding: 13px 16px;
+  }
+}
+
+/* ---- very small phone ---- */
+@media (max-width: 380px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero-stats .s {
+    flex: 1 1 100%;
+  }
+  .sobre-list {
+    margin-top: 22px;
   }
 }
