@@ -116,6 +116,7 @@ section {
   justify-content: center;
   gap: 10px;
   height: 54px;
+  max-width: 100%;
   padding: 0 28px;
   border: none;
   border-radius: 10px;
@@ -506,6 +507,15 @@ section {
   flex-wrap: wrap;
   gap: 14px;
   margin-top: 38px;
+}
+/* Grid items default to min-width:auto, so a wide image (its intrinsic width)
+   blows out the single column when these grids stack on mobile, dragging the
+   copy and buttons past the viewport. Let the items shrink to the track. */
+.hero-grid > *,
+.sobre-grid > *,
+.orc-grid > *,
+.cob-grid > * {
+  min-width: 0;
 }
 .hero .trust {
   display: flex;
@@ -1796,11 +1806,12 @@ section {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  /* keep floating hero badges inside the now full-width art */
+  /* full-width art: let width drive height via aspect-ratio. A min-height here
+     would combine with aspect-ratio to force a width wider than the viewport. */
   [data-hero="escuro"] .hero-art,
   [data-hero="claro"] .hero-art {
-    aspect-ratio: 16/11;
-    min-height: 320px;
+    aspect-ratio: 5/4;
+    min-height: 0;
   }
   [data-hero="escuro"] .hero-badge {
     left: 16px;
